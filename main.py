@@ -1,4 +1,4 @@
-# Updated FastAPI Backend Code
+
 
 from fastapi import FastAPI, Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
@@ -458,4 +458,5 @@ def admin_get_expenses(
             "date": e.get("date"),
             "description": e.get("description")
         })
+
     return out
